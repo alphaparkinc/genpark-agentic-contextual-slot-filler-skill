@@ -1,0 +1,33 @@
+{
+  "name": "genpark-agentic-contextual-slot-filler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Conversational slot filling and intent requirement state machine generating targeted clarifying questions for missing parameters.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "dialogue-management",
+  "tags": [
+    "slot-filling",
+    "dialogue-state",
+    "conversational-ai",
+    "intent-resolution",
+    "clarification-prompts"
+  ],
+  "inputs": {
+    "extracted_entities": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "session_slot_id": {
+      "type": "string"
+    },
+    "slots_complete": {
+      "type": "boolean"
+    },
+    "next_clarification_prompt": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
